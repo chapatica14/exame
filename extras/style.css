@@ -1,0 +1,49 @@
+
+.navbar {
+  background-color: #000;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #00f5d4;
+}
+
+footer {
+  background-color: #000;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+footer .social {
+  margin-top: 1rem;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 0 0.7rem;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social a:hover {
+  color: #00f5d4;
+  transform: scale(1.3);
+}

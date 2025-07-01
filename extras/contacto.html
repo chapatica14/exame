@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="file:///C:/Users/chapatica/Desktop/exame 1/extras/style.css">
+  
+  <title>Contacto</title>
+  <style>
+    
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  section#contact {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
+  }
+
+  h2 {
+    text-align: center;
+    color: #00f5d4;
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+
+  form label {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 10px;
+    background-color: #121212;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    border-color: #00f5d4;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+    outline: none;
+  }
+
+  form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  button[type="submit"] {
+    background: #00f5d4;
+    color: #000;
+  }
+
+  button[type="submit"]:hover {
+    background: #00c4a7;
+    transform: scale(1.05);
+  }
+
+  button[type="reset"] {
+    background: #ff4757;
+    color: white;
+  }
+
+  button[type="reset"]:hover {
+    background: #e84148;
+    transform: scale(1.05);
+  }
+
+  .mensagem-sucesso {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #00f5d4;
+    background-color: #121212;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #00f5d4;
+  }
+
+  .telefone {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1em;
+    color: #ccc;
+  }
+
+  .telefone i,
+  .telefone strong {
+    color: #00f5d4;
+    margin-left: 5px;
+  }
+
+  #voltar-topo {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #00f5d4;
+    color: #000;
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  #voltar-topo:hover {
+    background-color: #00c4a7;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 600px) {
+    section#contact {
+      margin: 30px 10px;
+    }
+
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button-group button {
+      width: 100%;
+    }
+  }
+</style>
+
+  </style>
+   <nav class="navbar">
+    <ul>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/index.html">Início</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/extras/sobreme.html">Sobre</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/extras/contacto.html">Contato</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/index.html#projects">Meus Projetos</a></li>
+    </ul>
+  </nav>
+</head>
+<body>
+
+  <section id="contact">
+    <h2>Fale Comigo</h2>
+    <form id="formulario">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+
+      <div class="button-group">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+
+      <div class="mensagem-sucesso" id="sucesso">Mensagem enviada com sucesso!</div>
+    </form>
+
+    <div class="telefone">
+      📞 Telefone: <strong>861801590</strong>
+    </div>
+  </section>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="voltar-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Voltar</button>
+
+  <script>
+    const form = document.getElementById("formulario");
+    const sucesso = document.getElementById("sucesso");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Impede o envio tradicional
+      sucesso.style.display = "block"; // Mostra a mensagem
+      form.reset(); // Limpa os campos
+    });
+  </script>
+    <footer>
+    <p>© Gonçalo Chapatica 2025</p>
+    <div class="social">
+      <a href="https://www.facebook.com/share/1VS1oNdoCg/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/gonsalo_junior?igsh=MXdpOXd0eWNmZnBvZQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/258861801590" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

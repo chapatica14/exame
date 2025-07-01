@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="file:///C:/Users/chapatica/Desktop/exame 1/extras/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    section {
+      margin: 40px auto;
+      padding: 40px 20px;
+      max-width: 960px;
+      background: #1a1a1a;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 255, 204, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00f5d4;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+
+    .projetos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .projeto-card {
+      background-color: #262626;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 255, 204, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .projeto-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .projeto-card h3 {
+      margin-top: 0;
+      color: #00f5d4;
+    }
+
+    .projeto-card p {
+      color: #ccc;
+    }
+
+    .media {
+      margin-top: 15px;
+    }
+
+    .media img, .media video {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    .media video {
+      height: 200px;
+    }
+
+    @media (max-width: 600px) {
+      .projeto-card {
+        padding: 15px;
+      }
+    }
+  </style>
+  
+ <nav class="navbar">
+    <ul>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/index.html">Início</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/extras/sobreme.html">Sobre</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/extras/contacto.html">Contato</a></li>
+      <li><a href="file:///C:/Users/chapatica/Desktop/exame 1/index.html#projects">Meus Projetos</a></li>
+    </ul>
+  </nav>
+  
+</head>
+<body>
+
+<section id="projetos">
+  <h2>💡 Meus Projetos</h2>
+  <div class="projetos-container">
+
+    <!-- Cartaz 1 -->
+    <div class="projeto-card">
+      <h3>🎨 Cartaz Publicitário 1</h3>
+      <p>Cartaz feito no Canva.</p>
+      <div class="media">
+        <img src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/cha.jpeg" alt="Cartaz 1">
+      </div>
+    </div>
+
+    <!-- Cartaz 2 -->
+    <div class="projeto-card">
+      <h3>🖼️ Cartaz Publicitário </h3>
+      <p>Design criativo  alusivo A mulher moçambicana.</p>
+      <div class="media">
+        <img src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/cartaz 2.jpeg" alt="Cartaz 2">
+      </div>
+    </div>
+
+    <!-- Vídeo 1 -->
+    <div class="projeto-card">
+      <h3> Cartaz Publicitário</h3>
+      <p>convidado todas mulheres.</p>
+      <div class="media">
+        <img src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/cesar.jpeg" alt="Cartaz 2">
+      </div>
+    </div>
+
+    <!-- Vídeo 2 -->
+    <div class="projeto-card">
+      <h3>🎬 Vídeo Criativo 2</h3>
+      <p>Animação para apresentação de projeto.</p>
+      <div class="media">
+        <video controls><source src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/QCET9753.MOV " type="video/mp4"></video>
+      </div>
+    </div>
+
+    <!-- Projeto 3D 1 -->
+    <div class="projeto-card">
+      <h3>🧱 Modelagem Cinema 4D </h3>
+      <p>criando em copo com pega.</p>
+      <div class="media">
+        <img src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/suco.jpeg" alt="Projeto 4D 1">
+      </div>
+    </div>
+
+    <!-- Projeto 3D 2 -->
+    <div class="projeto-card">
+      <h3>🏗️ Estrutura 4D Criativa 2</h3>
+      <p>Modelagem de objeto geométrico em cinema 4D.</p>
+      <div class="media">
+        <img src="file:///C:/Users/chapatica/Desktop/exame 1/fotos/print.png" alt="Projeto 4D 2">
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer>
+    <p>© Gonçalo Chapatica 2025</p>
+    <div class="social">
+      <a href="https://www.facebook.com/share/1VS1oNdoCg/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/gonsalo_junior?igsh=MXdpOXd0eWNmZnBvZQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/258861801590" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
